@@ -3,6 +3,46 @@
 <ul>
   <li>{{ courses }}</li>
 </ul>
-<button class="btn btn-primary">Save</button>
+<button class="btn btn-primary" [class.active]="isActive">Save</button>
 <br />
+<button [style.backgroundColor]="isActive ? 'blue' : 'white'">
+  style binding
+</button>
+<br />
+<button (click)="onSave($event)">Save</button>
+<br />
+<input (keyup)="onKeyUp($event)" />
+<br />
+<input (keyup.enter)="onKeyUpFilter()" />
+<br />
+<table>
+  <tr>
+    <td [attr.colSpan]="colSpan"></td>
+  </tr>
+</table>
+<br />
+<input (keyUp.enter)="getValue1($event)" />
+<input #email (keyUp.enter)="getValue2(email.value)" />
+<br />
+<input
+  [value]="userName"
+  (keyUp.enter)="userName = $event.target.value; twoWayBinding()"
+/>
+<input [(ngModel)]="userName" (keyUp.enter)="twoWayBinding()" />
+<br />
+<div>
+  {{ myObj.title | lowercase | uppercase }}
+</div>
+<div>
+  {{ myObj.students | number }}
+</div>
+<div>
+  {{ myObj.rating | number: "2.1-1" }}
+</div>
+<div>
+  {{ myObj.price | currency: "EUR":true:"3.2-2" }}
+</div>
+<div>
+  {{ myObj.releaseDate }}
+</div>
 <hr />
