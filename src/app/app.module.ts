@@ -5,9 +5,10 @@ import { AppComponent } from './app.component';
 import { CourseService } from './course.service';
 import { CourseComponent } from './course/course.component';
 import { SummeryPipe } from './summery.pipe';
+import { FavoriteComponent } from './favorite/favorite.component';
 
 @NgModule({
-  declarations: [AppComponent, CourseComponent, SummeryPipe],
+  declarations: [AppComponent, CourseComponent, SummeryPipe, FavoriteComponent],
   imports: [BrowserModule, FormsModule],
   providers: [CourseService],
   bootstrap: [AppComponent],
