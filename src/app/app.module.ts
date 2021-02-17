@@ -6,9 +6,11 @@ import { CourseService } from './course.service';
 import { CourseComponent } from './course/course.component';
 import { SummeryPipe } from './summery.pipe';
 import { FavoriteComponent } from './favorite/favorite.component';
+import { CustomInputComponent } from './custom-input/custom-input.component';
+import { TitleCasePipe } from './title-case.pipe';
 
 @NgModule({
-  declarations: [AppComponent, CourseComponent, SummeryPipe, FavoriteComponent],
+  declarations: [AppComponent, CourseComponent, SummeryPipe, FavoriteComponent, CustomInputComponent, TitleCasePipe],
   imports: [BrowserModule, FormsModule],
   providers: [CourseService],
   bootstrap: [AppComponent],
