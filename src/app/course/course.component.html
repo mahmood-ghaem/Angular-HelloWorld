@@ -37,12 +37,16 @@
   {{ myObj.students | number }}
 </div>
 <div>
-  {{ myObj.rating | number: "2.1-1" }}
+  {{ myObj.rating | number: '2.1-1' }}
 </div>
 <div>
-  {{ myObj.price | currency: "EUR":true:"3.2-2" }}
+  {{ myObj.price | currency: 'EUR':true:'3.2-2' }}
 </div>
 <div>
   {{ myObj.releaseDate }}
 </div>
+<div>
+  {{ myObj.description | summery: 30 }}
+</div>
+
 <hr />
