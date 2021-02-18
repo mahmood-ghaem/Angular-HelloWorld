@@ -7,15 +7,16 @@
   <br />
   <app-custom-input></app-custom-input>
   <app-bootstrap-panel>
-    <div class="heading">
+    <!-- if we change ng-container instead div when angular render the page there is no extra div just content of ng-container will be show -->
+    <ng-container class="heading">
       <h1>Hello I'm heading</h1>
-    </div>
-    <div class="body">
+    </ng-container>
+    <ng-container class="body">
       <h2>Lorem ipsum dolor sit amet.</h2>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, doloremque
       voluptate maiores eligendi animi eius consectetur, laboriosam non est
       cupiditate temporibus doloribus error, porro optio? Repellendus autem
       tempore molestias dolore.
-    </div>
+    </ng-container>
   </app-bootstrap-panel>
 </div>
