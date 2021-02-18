@@ -335,7 +335,7 @@
   <app-course></app-course>
   <app-favorite
     [is-favorite]="post.isSelected"
-    (change)="onFavoriteChanged()"
+    (change)="onFavoriteChanged($event)"
   ></app-favorite>
   <app-custom-input></app-custom-input>
 
